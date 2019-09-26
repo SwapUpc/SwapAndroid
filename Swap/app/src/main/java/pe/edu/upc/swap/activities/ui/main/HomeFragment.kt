@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import pe.edu.upc.swap.R
-import pe.edu.upc.swap.activities.R
+
 
 class HomeFragment : Fragment() {
 
