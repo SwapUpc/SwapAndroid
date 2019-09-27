@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SwapApp</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="text_login">Login</string>
+    <string name="image_descript">Pequeño avion de papel como logo temporal de app</string>
+    <string name="text_signup">¿No tienes una cuenta?</string>
+    <string name="newAccount"><u>Create una aqui</u></string>
+</resources>
