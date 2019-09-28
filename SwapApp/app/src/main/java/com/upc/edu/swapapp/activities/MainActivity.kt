@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
             val request = LoginRequest(email, password)
 
+
             RetrofitClient.instance(token).userLogin(request)
                 .enqueue(object : Callback<LoginResponse> {
                     override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                             token = response.body()!!.data
 
                             //Guardar data en celular (flag de log y token)
-                            Toast.makeText(applicationContext, response.body()!!.message + " " + response.body()!!.data, Toast.LENGTH_LONG).show()
+                            Toast.makeText(applicationContext, response.body()!!.message + " token -> " + response.body()!!.data, Toast.LENGTH_LONG).show()
 
                             val intent = Intent(applicationContext, HomeActivity::class.java)
                             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

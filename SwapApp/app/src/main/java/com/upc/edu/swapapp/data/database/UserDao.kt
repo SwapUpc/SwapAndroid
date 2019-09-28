@@ -14,4 +14,6 @@ interface UserDao {
     @Insert
     fun insert(vararg user: User)
 
+    @Query("select token from User where id = 1")
+    fun getToken(): String?
 }
