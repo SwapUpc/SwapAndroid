@@ -8,4 +8,12 @@
     <string name="text_signup">¿No tienes una cuenta?</string>
     <string name="newAccount"><u>Create  una  aqui</u></string>
     <string name="Prueba">Prueba</string>
+    <string name="item_profile">Profile</string>
+    <string name="item_gather">Gather</string>
+    <string name="item_lesson">Lesson</string>
+    <string name="txt_welcome">Welcome  !</string>
+    <string name="txt_UserName">Name</string>
+    <string name="txtCountry">Country , Place</string>
+    <string name="txtAge">Age</string>
+    <string name="imgDescription">Foto del Usuario</string>
 </resources>
