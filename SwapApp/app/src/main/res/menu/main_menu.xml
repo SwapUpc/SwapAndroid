@@ -5,7 +5,7 @@
     <item
         android:id="@+id/nvg_Profile"
         android:icon="@drawable/ic_profile"
-        android:title="@string/item_profile"
+        android:title="@string/item_friends"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/nvg_Gather"
