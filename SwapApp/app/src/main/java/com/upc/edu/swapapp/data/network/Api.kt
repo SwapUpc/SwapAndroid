@@ -2,10 +2,7 @@ package com.upc.edu.swapapp.data.network
 
 import com.upc.edu.swapapp.data.network.model.*
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface Api {
 
@@ -52,16 +49,43 @@ interface Api {
     fun getTasks():Call<TasksResponse>
 
     //Lesson
+    @POST("lesson/create")
+    fun postLessonCreate(@Body request: LessonCreateRequest
+    ): Call<LessonCreateResponse>
 
+    @PUT("lesson/accept/{id}")
+    fun putAcceptLesson(@Query("id") id: Int):Call<AcceptLessonResponse>
 
+    @PUT("lesson/accept/{id}")
+    fun putCancelLesson(@Query("id") id: Int):Call<CancelLessonResponse>
 
-    /*TODO: PUT -> Update*/
+    @PUT("lesson/update/{id}")
+    fun putUpdateLesson(@Query("id") id: Int,
+                        @Body request: UpdateLessonRequest
+    ):Call<UpdateLessonResponse>
 
+    @GET("lesson/teacher/{id}")
+    fun getTeacher(@Query("id") id: Int):Call<TeacherResponse>
 
+    @GET("lesson/teachers")
+    fun getTeachers(@Query("id") id: Int):Call<TeachersResponse>
 
+    @GET("lesson/detail/{id}")
+    fun getDetail(@Query("id") id: Int):Call<DetailResponse>
 
+    @GET("lesson/views")
+    fun getDetail():Call<ViewsResponse>
 
+    //User
+    @DELETE("user/delete")
+    fun deleteUser():Call<DeleteUserResponse>
 
+    @GET("user/profile")
+    fun getUser():Call<UserResponse>
+
+    @PUT("user/update")
+    fun putUpdateUser(@Body request: UpdateUserRequest
+    ):Call<UpdateUserResponse>
 
 
 
