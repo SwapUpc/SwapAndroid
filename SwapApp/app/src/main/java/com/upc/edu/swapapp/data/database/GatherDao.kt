@@ -5,12 +5,13 @@ import androidx.room.Delete
 import androidx.room.Insert
 import com.upc.edu.swapapp.data.database.model.Gather
 import androidx.room.Query
+import retrofit2.Call
 
 @Dao
 interface GatherDao {
 
     @Query( "select * from gather")
-    fun getAll(): List<Gather>
+    fun getAll(): Call<Gather>
 
     @Query( "select * from gather where id=:id")
     fun findById(id : Int)
