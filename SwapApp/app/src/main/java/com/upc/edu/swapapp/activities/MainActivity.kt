@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             val request = LoginRequest(email, password)
 
 
-            RetrofitClient.instance(token).userLogin(request)
+            RetrofitClient.instance(token).postUserLogin(request)
                 .enqueue(object : Callback<LoginResponse> {
                     override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                         Toast.makeText(applicationContext, "Error  Critico 2", Toast.LENGTH_LONG)

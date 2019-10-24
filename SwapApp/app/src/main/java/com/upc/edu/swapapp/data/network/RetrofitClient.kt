@@ -12,7 +12,7 @@ object RetrofitClient {
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor{ chain ->
             val original = chain.request()
-
+                //TODO: Editar headers ?
             val requestBuilder = original.newBuilder()
                 .addHeader("Authorization", t)
                 .method(original.method(), original.body())
