@@ -80,7 +80,7 @@ interface Api {
     @DELETE("user/delete")
     fun deleteUser():Call<DeleteUserResponse>
 
-    @GET("user/profile")
+    @GET("  ")
     fun getUser():Call<UserResponse>
 
     @PUT("user/update")
