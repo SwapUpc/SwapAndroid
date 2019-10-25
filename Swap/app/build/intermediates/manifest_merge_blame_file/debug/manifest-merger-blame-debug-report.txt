@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pe.edu.upc.swap"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:7:5-30:19
+14        android:allowBackup="true"
+14-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] /Users/daniel/.gradle/caches/transforms-2/files-2.1/2e2076e6216b29ee97192fe17edf1ebc/core-1.1.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_logo"
+17-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:9:9-39
+18        android:label="@string/app_name"
+18-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_logo_round"
+19-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:11:9-50
+20        android:supportsRtl="true"
+20-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:13:9-40
+23        <activity android:name="pe.edu.upc.swap.activities.HomeActivity" />
+23-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:14:9-70
+23-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:14:19-58
+24        <activity android:name="pe.edu.upc.swap.activities.SplashActivity" >
+24-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:15:9-21:20
+24-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:15:19-60
+25            <intent-filter>
+25-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:16:13-20:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:17:17-69
+26-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:17:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:19:17-77
+28-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:19:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:22:9-28:20
+32            android:name="pe.edu.upc.swap.activities.SignUpActivity"
+32-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:23:13-54
+33            android:parentActivityName="pe.edu.upc.swap.activities.SignUpActivity" >
+33-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:24:13-68
+34            <meta-data
+34-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:25:13-27:77
+35                android:name="android.support.PARENT_ACTIVITY"
+35-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:26:17-63
+36                android:value="pe.edu.upc.swap.activities.SignUpActivity" />
+36-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:27:17-74
+37        </activity>
+38        <activity android:name="pe.edu.upc.swap.activities.LoginActivity" />
+38-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:29:9-71
+38-->/Users/daniel/Git_Proyects/AndroidAppTestImage/Swap/app/src/main/AndroidManifest.xml:29:19-59
+39
+40        <service
+40-->[androidx.room:room-runtime:2.2.0-rc01] /Users/daniel/.gradle/caches/transforms-2/files-2.1/4988ffef9e2e30b2dd3e6c61b3908f48/room-runtime-2.2.0-rc01/AndroidManifest.xml:25:9-27:40
+41            android:name="androidx.room.MultiInstanceInvalidationService"
+41-->[androidx.room:room-runtime:2.2.0-rc01] /Users/daniel/.gradle/caches/transforms-2/files-2.1/4988ffef9e2e30b2dd3e6c61b3908f48/room-runtime-2.2.0-rc01/AndroidManifest.xml:26:13-74
+42            android:exported="false" />
+42-->[androidx.room:room-runtime:2.2.0-rc01] /Users/daniel/.gradle/caches/transforms-2/files-2.1/4988ffef9e2e30b2dd3e6c61b3908f48/room-runtime-2.2.0-rc01/AndroidManifest.xml:27:13-37
+43    </application>
+44
+45</manifest>
