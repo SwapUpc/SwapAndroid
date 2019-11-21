@@ -34,7 +34,7 @@
     <string name="hint_login_authorization">Your email or password is incorrect</string>
     <string name="hint_image_description">This picture is your profile picture</string>
     <string name="hint_title_register">Register</string>
-    <string name="hint_title_home">Home</string>
+    <string name="hint_title_home">Swap</string>
     <string name="hint_logo_description">The logo of Swap</string>
     <string name="hint_title_teacher_fragment">Teachers</string>
     <string name="hint_title_lesson_fragment">Lessons</string>

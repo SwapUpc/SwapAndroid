@@ -35,7 +35,7 @@
     <string name="hint_title_register">Registro</string>
     <string name="hint_username">Correo</string>
     <string name="hello_blank_fragment">Hola Fragmento</string>
-    <string name="hint_title_home">Inicio</string>
+    <string name="hint_title_home">Swap</string>
     <string name="hint_title_lesson_fragment">Clases</string>
     <string name="hint_title_teacher_fragment">Profesores</string>
     <string name="alert_exit">Una vez más para salir</string>
